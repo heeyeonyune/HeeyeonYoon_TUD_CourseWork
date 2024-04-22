@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-
+    ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Museum of South Korea</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/header_logo.png" alt="Image of the logo"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/facts.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/Exhibitions.html">Exhibitions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/videos.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/contactus.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="liveAlertPlaceholder"></div>
+        <div id="clock_box">
+          <div id="clock"></div>
+          <p>Current time in Korea</p>
+        </div>
+    </nav>
+    <header class="indexHeader">
+       <div>
+            <h1 class="text-uppercase">National Museum of South Korea</h1>
+            <p class="font-monospace">Learn about the sculpture of Korea</p>
+        </div>
+    </header>
+    <section>
+        <center>
+            <div class="service_link">
+                <div>
+                    <div>
+                        <h1 class="firsth1">"Useful Contents"</h1>
+                    </div>
+                    <div class="service_link_c">
+                        <!-- first button -->
+                        <button type="button" class="btn btn-outline-light" onclick="openModal('hours')"><em>Hours</em></button>
+
+                        <!-- second button -->
+                        <button type="button" class="btn btn-outline-light" onclick="openModal('fare')"><em>Fees</em></button>
+
+                        <!-- third button -->
+                        <button type="button" class="btn btn-outline-light" onclick="openModal('facility')"><em>Facility</em></button>
+
+                        <!-- content of the modal -->
+                        <div id="modal">
+                          <span id="closeBtn" onclick="closeModal()">X</span>
+                          <div id="modalContent"></div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="indexSculp"> 
+                <h1 class="firsth1">"Ancient Korean Sculpture"</h1>
+                <table class="indexTable">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>
+                            <img src="images/Baekje_incense_burner.webp" class="rounded mx-auto d-block my_img" alt="Image of a Baekje incense burner" width="150" height="200"/>
+                        </td>
+                        
+                        <td>
+                            <img src="images/Goguryeo_kingdom_sculpture.webp" class="rounded mx-auto d-block my_img" alt="Image of a Goguryeo kingdom sculpture" width="150" height="200"/>
+                        </td>
+                        
+                        <td>
+                            <img src="images/Three_kingdoms_Sculpture.webp" class="rounded mx-auto d-block my_img" alt="Image of a Three kingdoms Sculpture" width="150" height="200"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>
+                            <p class="ind_sculp_name">Baekje incense burner</p>
+                        </td>
+                        <td>
+                            <p class="ind_sculp_name">Goguryeo kingdom sculpture</p>
+                        </td>
+                        <td>
+                            <p class="ind_sculp_name">Three kingdoms Sculpture</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </center>
+        <div id="iframe_map">
+            <h1>"How to visit?"<span class="badge bg-secondary">Map</span></h1>
+            <p align="center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51993516.401673!2d18.815826016757686!3d37.3085840948796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ed7e746c37%3A0x616286c7a66e50e7!2z6rWt66a97KSR7JWZ67CV66y86rSA!5e0!3m2!1sko!2sie!4v1697120625550!5m2!1sko!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </div>
+        <div align="center" class="container">
+          <form action="signup.html" method="post" id="signup">
+            <h1 id="tit_signup">Sign Up</h1>
+            <div class="field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+              <small></small>
+            </div>
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" placeholder="Enter your email address" />
+              <small></small>
+            </div>
+            <div class="field">
+              <button type="submit" class="full">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+    </section>
+    <footer>
+        <p>©2023 Created by Heeyeon Yoon</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDf
+    L" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
+
